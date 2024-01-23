@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Colors */
+:root {
+    --main: #eee;
+    --white: #fff;
+    --primary: #6658bf;
+    --button: #7e6ded;
+}
+
+/* Fonts */
+/* Roboto Mono */
+/* 400 */
+@font-face {
+    font-family: RobotoMonoRegular;
+    src: url(../inc/fonts/RobotoMono/static/RobotoMono-Regular.ttf)
+        format("truetype");
+}
+/* 700 */
+@font-face {
+    font-family: RobotoMonoBold;
+    src: url(../inc/fonts/RobotoMono/static/RobotoMono-Bold.ttf)
+        format("truetype");
+}
+
+/* Open Sans */
+/* 300 */
+@font-face {
+    font-family: OpenSansLight;
+    src: url(../inc/fonts/OpenSans/static/OpenSans-Light.ttf) format("truetype");
+}
+
+/* 400 */
+@font-face {
+    font-family: OpenSansRegular;
+    src: url(../inc/fonts/OpenSans/static/OpenSans-Regular.ttf)
+        format("truetype");
+}
+/* 700 */
+@font-face {
+    font-family: OpenSansBold;
+    src: url(../inc/fonts/OpenSans/static/OpenSans-Bold.ttf) format("truetype");
+}
+
+/* Components */
+.button {
+    font-family: OpenSansBold;
+    font-size: 16px;
+    background-color: var(--button);
+    width: fit-content;
+    padding: 16px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+/* Header */
+header {
+    height: 100vh;
+    background-color: var(--main);
+}
+
+.headerContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Header image and backdrop */
+.subjectContainer {
+    display: grid;
+    grid-template-rows: 85%;
+    grid-template-columns: 70%;
+    justify-content: center;
+}
+
+.imageBackdrop {
+    width: 85%;
+    height: 70%;
+    border-radius: 40px;
+    background-color: var(--primary);
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.itsme {
+    width: 100%;
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 1;
+    align-self: flex-end;
+}
+
+.aboutLinks a {
+    margin-right: 1em;
+}
+
+.aboutLinks a:last-of-type {
+    margin-right: 0em;
+}
+
+.arrowDownIcon {
+    width: 14px;
+    margin-left: 1em;
+}
+
+/* About */
+#about {
+    background-color: var(--white);
+    padding: 6.25em 0 6.25em 0;
+}
+
+/* Projects */
+#projects {
+    background-color: var(--main);
+    padding: 6.25em 0 6.25em 0;
+}
+
+/* Typography */
+h1,
+h2 {
+    font-family: RobotoMonoBold;
+}
+
+.headerContainer p {
+    font-family: RobotoMonoRegular;
+}
+
+p {
+    font-family: OpenSansRegular;
+}
+
+.headerBlack {
+    color: #000;
+}
+
+.headerWhite {
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    padding: 6.25em 0 6.25em 0;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+}
