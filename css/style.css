@@ -81,13 +81,13 @@ header {
 /* Header image and backdrop */
 .subjectContainer {
     display: grid;
-    grid-template-rows: 85%;
+    grid-template-rows: 80%;
     grid-template-columns: 70%;
     justify-content: center;
 }
 
 .imageBackdrop {
-    width: 85%;
+    width: 80%;
     height: 70%;
     border-radius: 40px;
     background-color: var(--primary);
@@ -120,6 +120,52 @@ header {
 #about {
     background-color: var(--white);
     padding: 6.25em 0 6.25em 0;
+}
+
+.experienceTable {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 3.125em;
+}
+
+.eperienceTableDivider {
+    color: var(--primary);
+    background-color: var(--button);
+    border: none;
+    height: 3px;
+    opacity: 1;
+    margin: .5em 0 .5em 0;
+}
+
+.experience {
+    display: flex;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 1.5em 0em 1.5em 0em;
+}
+
+.experience:nth-child(3), .experience:last-of-type {
+    border-bottom: unset;
+}
+
+.experienceYear {
+    font-family: OpenSansBold;
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+.experienceTitle {
+    margin-bottom: 0;
+}
+
+.languages-software-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 6.25em;
+}
+
+.languages-software-icons img {
+    padding: 0 1.5em 0 1.5em;
 }
 
 /* Projects */
