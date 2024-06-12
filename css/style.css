@@ -1,342 +1,380 @@
 * {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* Colors */
 :root {
-  --main: #eee;
-  --white: #fff;
-  --primary: #6658bf;
-  --button: #7e6ded;
+    --main: #eee;
+    --white: #fff;
+    --primary: #6658bf;
+    --button: #7e6ded;
 }
 
 /* Fonts */
 /* Roboto Mono */
 @font-face {
-  font-family: RobotoMonoLight;
-  src: url(../inc/fonts/RobotoMono/static/RobotoMono-Light.ttf) format("truetype");
+    font-family: RobotoMonoLight;
+    src: url(../inc/fonts/RobotoMono/static/RobotoMono-Light.ttf)
+        format("truetype");
 }
 
 /* 400 */
 @font-face {
-  font-family: RobotoMonoRegular;
-  src: url(../inc/fonts/RobotoMono/static/RobotoMono-Regular.ttf) format("truetype");
+    font-family: RobotoMonoRegular;
+    src: url(../inc/fonts/RobotoMono/static/RobotoMono-Regular.ttf)
+        format("truetype");
 }
 /* 700 */
 @font-face {
-  font-family: RobotoMonoBold;
-  src: url(../inc/fonts/RobotoMono/static/RobotoMono-Bold.ttf) format("truetype");
+    font-family: RobotoMonoBold;
+    src: url(../inc/fonts/RobotoMono/static/RobotoMono-Bold.ttf)
+        format("truetype");
 }
 
 /* Open Sans */
 /* 300 */
 @font-face {
-  font-family: OpenSansLight;
-  src: url(../inc/fonts/OpenSans/static/OpenSans-Light.ttf) format("truetype");
+    font-family: OpenSansLight;
+    src: url(../inc/fonts/OpenSans/static/OpenSans-Light.ttf) format("truetype");
 }
 
 /* 400 */
 @font-face {
-  font-family: OpenSansRegular;
-  src: url(../inc/fonts/OpenSans/static/OpenSans-Regular.ttf) format("truetype");
+    font-family: OpenSansRegular;
+    src: url(../inc/fonts/OpenSans/static/OpenSans-Regular.ttf)
+        format("truetype");
 }
 /* 700 */
 @font-face {
-  font-family: OpenSansBold;
-  src: url(../inc/fonts/OpenSans/static/OpenSans-Bold.ttf) format("truetype");
+    font-family: OpenSansBold;
+    src: url(../inc/fonts/OpenSans/static/OpenSans-Bold.ttf) format("truetype");
 }
 
 /* Components */
 .button {
-  font-family: OpenSansBold;
-  font-size: 16px;
-  background-color: var(--button);
-  width: fit-content;
-  padding: 16px 30px;
-  border-radius: 30px;
-  text-align: center;
+    font-family: OpenSansBold;
+    font-size: 16px;
+    background-color: var(--button);
+    width: fit-content;
+    padding: 16px 30px;
+    border-radius: 30px;
+    text-align: center;
 }
 
 .button a {
-  text-decoration: none;
-  color: var(--white);
+    text-decoration: none;
+    color: var(--white);
 }
 
 .button:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 /* Header */
 header {
-  height: 100vh;
-  background-color: var(--main);
+    height: 100vh;
+    background-color: var(--main);
 }
 
 .headerContainer {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Header image and backdrop */
 .subjectContainer {
-  display: grid;
-  grid-template-rows: 80%;
-  grid-template-columns: 70%;
-  justify-content: center;
+    display: grid;
+    grid-template-rows: 80%;
+    grid-template-columns: 70%;
+    justify-content: center;
 }
 
 .imageBackdrop {
-  width: 80%;
-  height: 70%;
-  border-radius: 40px;
-  background-color: var(--primary);
-  grid-area: 1 / 1 / 2 / 2;
-  justify-self: center;
-  align-self: center;
+    width: 80%;
+    height: 70%;
+    border-radius: 40px;
+    background-color: var(--primary);
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: center;
+    align-self: center;
 }
 
 .itsme {
-  width: 100%;
-  grid-area: 1 / 1 / 2 / 2;
-  z-index: 1;
-  align-self: flex-end;
+    width: 100%;
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 1;
+    align-self: flex-end;
 }
 
 .aboutLinks {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .aboutLinksExternal a {
-  margin: 0 1em 0 1em;
+    margin: 0 1em 0 1em;
 }
 
 .aboutLinksExternal a:last-of-type {
-  margin: 0em 0em;
+    margin: 0em 0em;
 }
 
 .arrowDownIcon {
-  width: 14px;
-  margin-left: 1em;
+    width: 14px;
+    margin-left: 1em;
 }
 
 /* About */
 #about {
-  background-color: var(--white);
-  padding: 6.25em 0 6.25em 0;
+    background-color: var(--white);
+    padding: 6.25em 0 6.25em 0;
 }
 
 .experienceTable {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-top: 3.125em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 3.125em;
 }
 
 .eperienceTableDivider {
-  color: var(--primary);
-  background-color: var(--button);
-  border: none;
-  height: 3px;
-  opacity: 1;
-  margin: 0.5em 0 0.5em 0;
+    color: var(--primary);
+    background-color: var(--button);
+    border: none;
+    height: 3px;
+    opacity: 1;
+    margin: 0.5em 0 0.5em 0;
 }
 
 .experience {
-  display: flex;
-  border-bottom: 1px solid #d8d8d8;
-  padding: 1.5em 0em 1.5em 0em;
+    display: flex;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 1.5em 0em 1.5em 0em;
 }
 
 .experience:nth-child(3),
 .experience:last-of-type {
-  border-bottom: unset;
+    border-bottom: unset;
 }
 
 .experienceYear {
-  font-family: OpenSansBold;
-  margin-bottom: 0;
-  flex-grow: 1;
+    font-family: OpenSansBold;
+    margin-bottom: 0;
+    flex-grow: 1;
 }
 
 .experienceTitle {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .languages-software-icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 6.25em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 6.25em;
 }
 
 .languages-software-icons img {
-  padding: 1em;
+    padding: 1em;
 }
 
 /* Projects */
 #projects {
-  background-color: var(--main);
-  padding: 6.25em 0 6.25em 0;
+    background-color: var(--main);
+    padding: 6.25em 0 6.25em 0;
+}
+
+.projectBlock,
+.projectBlockOptional {
+    text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 440px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.projectBlock:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+#project1 {
+    background-image: url(../inc/images/project_insideoutdoor.png);
 }
 
 .projectContainer {
-  display: grid;
-  grid-auto-flow: column;
-  grid-row: 1;
-  grid-template-columns: 2.5fr 6fr;
-  gap: 2em;
-  padding: 2em 0em 2em 0em;
-  border-bottom: 1px solid var(--primary);
+    display: grid;
+    grid-auto-flow: column;
+    grid-row: 1;
+    grid-template-columns: 2.5fr 6fr;
+    gap: 2em;
+    padding: 2em 0em 2em 0em;
+    border-bottom: 1px solid var(--primary);
 }
 
 .projectImg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 30px;
-  align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    align-items: flex-start;
 }
 
 .projectContainer:last-of-type {
-  border-bottom: unset;
+    border-bottom: unset;
 }
 
 .projectCategory {
-  font-family: OpenSansBold;
-  color: var(--primary);
+    font-family: OpenSansBold;
+    color: var(--primary);
 }
 
 .projectExternalLinks {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-items: flex-end;
 }
 
 .projectExternalLinks div {
-  margin-right: 1em;
+    margin-right: 1em;
 }
 
 /* Typography */
 h1,
 h2,
 h3 {
-  font-family: RobotoMonoBold;
-  margin-bottom: 0 !important;
+    font-family: RobotoMonoBold;
+    margin-bottom: 0 !important;
 }
 
 h3 {
-  font-size: 24px !important;
+    font-size: 24px !important;
 }
 
 p {
-  font-family: OpenSansRegular;
-  margin-bottom: 0 !important;
+    font-family: OpenSansRegular;
+    margin-bottom: 0 !important;
 }
 
 .headerBlack {
-  color: #000;
+    color: #000;
 }
 
 .headerWhite {
-  color: #fff;
+    color: #fff;
 }
 
 /* Footer */
 footer {
-  background-color: var(--primary);
-  padding: 6.25em 0 6.25em 0;
+    background-color: var(--primary);
+    padding: 6.25em 0 6.25em 0;
 }
 
 .footerContainer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .footerMail {
-  font-family: RobotoMonoLight;
-  color: var(--white);
-  font-size: 24px;
-  text-decoration: underline;
-  width: fit-content;
+    font-family: RobotoMonoLight;
+    color: var(--white);
+    font-size: 24px;
+    text-decoration: underline;
+    width: fit-content;
 }
 
 .footerMail:hover {
-  opacity: 0.5;
+    opacity: 0.7;
 }
 
 .footerIcons a {
-  margin-right: 1em;
+    margin-right: 1em;
 }
 
 .footerIcons a:last-of-type {
-  margin-right: 0;
+    margin-right: 0;
+}
+
+.aboutLinksExternal a:hover,
+.projectExternalLinks a:hover,
+.footerIcons a:hover {
+    opacity: 0.8;
 }
 
 .copyright {
-  color: var(--white);
+    color: var(--white);
 }
 
 /* media queries */
 @media screen and (max-width: 991px) {
-  .projectContainer {
-    grid-auto-flow: row;
-    grid-template-columns: unset;
-  }
-  .projectContainer .projectImg {
-    display: none;
-  }
-  .projectExternalLinks {
-    justify-content: center;
-  }
-  .projectContainer .button {
-    padding: 8px 60px;
-  }
+    .projectContainer {
+        grid-auto-flow: row;
+        grid-template-columns: unset;
+    }
+    .projectContainer .projectImg {
+        display: none;
+    }
+    .projectExternalLinks {
+        justify-content: center;
+    }
+    .projectContainer .button {
+        padding: 8px 60px;
+    }
 }
 @media screen and (max-width: 767px) {
-  h1,
-  h2,
-  h3,
-  p {
-    text-align: center;
-  }
-  .intro {
-    margin-bottom: 5em;
-  }
-  .aboutLinks {
-    justify-content: center;
-  }
-  .container p {
-    width: 100% !important;
-  }
-  .experienceTable .experience p.experienceYear {
-    text-align: start;
-  }
-  .experienceTable .experience p.experienceTitle {
-    text-align: right;
-  }
-  .languages-software-icons {
-    margin-top: 4em;
-  }
-  .languages-software-icons img {
-    padding: 1em;
-  }
-  footer {
-    text-align: center;
-  }
-  .footerMail {
-    width: 100%;
-  }
+    h1,
+    h2,
+    h3,
+    p {
+        text-align: center;
+    }
+    .intro {
+        margin-bottom: 5em;
+    }
+    .aboutLinks {
+        justify-content: center;
+    }
+    .container p {
+        width: 100% !important;
+    }
+    .experienceTable .experience p.experienceYear {
+        text-align: start;
+    }
+    .experienceTable .experience p.experienceTitle {
+        text-align: right;
+    }
+    .languages-software-icons {
+        margin-top: 4em;
+    }
+    .languages-software-icons img {
+        padding: 1em;
+    }
+    footer {
+        text-align: center;
+    }
+    .footerMail {
+        width: 100%;
+    }
 }
 
 /* @media screen and (max-width: 576px) {
