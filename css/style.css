@@ -220,44 +220,6 @@ header {
     background-image: url(../inc/images/project_insideoutdoor.png);
 }
 
-.projectContainer {
-    display: grid;
-    grid-auto-flow: column;
-    grid-row: 1;
-    grid-template-columns: 2.5fr 6fr;
-    gap: 2em;
-    padding: 2em 0em 2em 0em;
-    border-bottom: 1px solid var(--primary);
-}
-
-.projectImg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 30px;
-    align-items: flex-start;
-}
-
-.projectContainer:last-of-type {
-    border-bottom: unset;
-}
-
-.projectCategory {
-    font-family: OpenSansBold;
-    color: var(--primary);
-}
-
-.projectExternalLinks {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    align-items: flex-end;
-}
-
-.projectExternalLinks div {
-    margin-right: 1em;
-}
-
 /* Typography */
 h1,
 h2,
