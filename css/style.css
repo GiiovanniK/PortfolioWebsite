@@ -138,6 +138,13 @@ header {
     margin-left: 1em;
 }
 
+.arrowAnimContainer {
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    right: 0;
+}
+
 /* About */
 #about {
     background-color: var(--white);
@@ -155,7 +162,7 @@ header {
     font-family: RobotoMonoRegular;
     font-size: 20px;
     color: #a6a6a6;
-    margin-bottom: .5em !important;
+    margin-bottom: 0.5em !important;
 }
 
 .experienceTableDivider {
@@ -176,7 +183,7 @@ header {
 .experience:nth-child(7),
 .experience:last-of-type {
     border-bottom: unset;
-    padding: 1.5em 0 0 0
+    padding: 1.5em 0 0 0;
 }
 
 .experienceYear {
@@ -217,8 +224,8 @@ header {
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: multiply;
-    -webkit-transition: -webkit-transform .5s ease-in-out;
-    transition: transform .5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     display: flex;
     align-items: center;
 }
@@ -237,7 +244,7 @@ header {
 .projectBlock:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    transition: all 0.5s;
+    transition: 0.5s ease;
 }
 
 #projects a {
@@ -357,13 +364,16 @@ footer {
         text-align: center;
     }
     .intro {
-        margin-bottom: 5em;
+        margin-bottom: 3em;
     }
     .aboutLinks {
         justify-content: center;
     }
     .container p {
         width: 100% !important;
+    }
+    .tableTitle {
+        text-align: left;
     }
     .experienceTable .experience p.experienceYear {
         text-align: start;
@@ -383,8 +393,34 @@ footer {
     .footerMail {
         width: 100%;
     }
+    .arrowAnim {
+        display: none !important;
+    }
 }
 
-/* @media screen and (max-width: 576px) {
+@media screen and (max-width: 350px) {
+    .footerMail {
+        font-size: 20px;
+    }
+}
 
-} */
+@media screen and (max-width: 329px) {
+    .aboutLinksExternal a {
+        margin: 0;
+    }
+    .aboutLinksExternal a img {
+        margin: 1em;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .intro {
+        margin-bottom: 0;
+    }
+    .intro p {
+        margin-bottom: 1em !important;
+    }
+    .arrowAnim {
+        display: none !important;
+    }
+}

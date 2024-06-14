@@ -1,0 +1,56 @@
+.projectBackground {
+    background-color: var(--main);
+}
+
+.goBack {
+    font-family: OpenSansRegular;
+    color: black;
+    text-decoration: underline;
+}
+
+.goBack:hover {
+    opacity: 0.6;
+}
+
+.projectHeader {
+    padding: 6.25em 0 6.25em 0;
+}
+
+.projectTags {
+    font-family: RobotoMonoRegular;
+    font-size: 18px;
+    color: #a6a6a6;
+    margin-top: 0.5em;
+}
+
+.projectAbout {
+    margin-top: 2em;
+    width: 50%;
+}
+
+.projectImageShowcase {
+    margin-top: 3.125em;
+}
+
+.projectImageDescription {
+    font-family: OpenSansRegular;
+    font-size: 16px;
+    color: #a6a6a6;
+    margin-top: 0.5em;
+}
+
+/* media queries */
+@media screen and (max-width: 991px) {
+    .projectImageShowcase div:first-of-type {
+        width: 100% !important;
+    }
+    .projectAbout {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .goBack {
+        text-align: center;
+    }
+}
