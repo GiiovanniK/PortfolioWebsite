@@ -151,24 +151,32 @@ header {
     margin-top: 3.125em;
 }
 
-.eperienceTableDivider {
+.tableTitle {
+    font-family: RobotoMonoRegular;
+    font-size: 20px;
+    color: #a6a6a6;
+    margin-bottom: .5em !important;
+}
+
+.experienceTableDivider {
     color: var(--primary);
     background-color: var(--button);
     border: none;
-    height: 3px;
+    height: 2px;
     opacity: 1;
-    margin: 0.5em 0 0.5em 0;
+    margin: 2em 0 2em 0;
 }
 
 .experience {
     display: flex;
     border-bottom: 1px solid #d8d8d8;
-    padding: 1.5em 0em 1.5em 0em;
+    padding: 1.5em 0 1.5em 0;
 }
 
-.experience:nth-child(3),
+.experience:nth-child(7),
 .experience:last-of-type {
     border-bottom: unset;
+    padding: 1.5em 0 0 0
 }
 
 .experienceYear {
