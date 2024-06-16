@@ -64,6 +64,8 @@ html {
     padding: 16px 30px;
     border-radius: 30px;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .button a {
@@ -124,13 +126,13 @@ header {
     text-decoration: none;
 }
 
-.aboutLinksExternal a {
-    text-decoration: none;
-    margin: 0 1em 0 1em;
+.aboutLinksExternal {
+    margin-left: .5em;
 }
 
-.aboutLinksExternal a:last-of-type {
-    margin: 0em 0em;
+.aboutLinksExternal a {
+    text-decoration: none;
+    padding: .5em;
 }
 
 .arrowDownIcon {
@@ -404,12 +406,18 @@ footer {
     }
 }
 
+@media screen and (max-width: 338px) {
+    .aboutLinksExternal {
+        margin-left: unset;
+    }
+}
+
 @media screen and (max-width: 329px) {
     .aboutLinksExternal a {
-        margin: 0;
+        padding: 0;
     }
     .aboutLinksExternal a img {
-        margin: 1em;
+        margin: 1em 1em 0 1em;
     }
 }
 

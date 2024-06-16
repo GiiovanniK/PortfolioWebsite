@@ -39,6 +39,19 @@
     margin-top: 0.5em;
 }
 
+.externalLinksContainer {
+    margin-top: 6.25em;
+}
+
+.externalProjectLinks a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.arrowExternal {
+    margin-left: 1em;
+  }
+
 /* media queries */
 @media screen and (max-width: 991px) {
     .projectImageShowcase div:first-of-type {
@@ -49,8 +62,23 @@
     }
 }
 
+@media screen and (max-width: 376px) {
+    .aboutLinksExternal a {
+        padding: 0;
+    }
+    .aboutLinksExternal a img {
+        margin: 1em 1em 0 1em;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .goBack {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .aboutLinksExternal {
+        margin-left: unset;
     }
 }
