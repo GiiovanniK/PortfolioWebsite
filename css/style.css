@@ -163,7 +163,7 @@ header {
 .tableTitle {
     font-family: RobotoMonoRegular;
     font-size: 20px;
-    color: #a6a6a6;
+    color: #929292;
     margin-bottom: 0.5em !important;
 }
 
@@ -263,16 +263,13 @@ header {
     background-image: url(../inc/images/covers/project_bychasseur.png);
 }
 #project4 {
-    background-image: url(../inc/images/covers/project_degasjes.png);
-}
-#project5 {
-    background-image: url(../inc/images/covers/project_fitwithmit.png);
-}
-#project6 {
     background-image: url(../inc/images/covers/project_VRimmersive.jpg);
 }
-#project7 {
+#project5 {
     background-image: url(../inc/images/covers/project_behavioural.png);
+}
+#project6 {
+    background-image: url(../inc/images/covers/project_fitwithmit.png);
 }
 
 /* Typography */

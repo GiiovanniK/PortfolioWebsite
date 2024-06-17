@@ -6,6 +6,8 @@
     font-family: OpenSansRegular;
     color: black;
     text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 1em;
 }
 
 .goBack:hover {
@@ -19,7 +21,7 @@
 .projectTags {
     font-family: RobotoMonoRegular;
     font-size: 18px;
-    color: #a6a6a6;
+    color: #929292;
     margin-top: 0.5em;
 }
 
@@ -49,14 +51,25 @@
 
 .arrowExternal {
     margin-left: 1em;
-  }
+}
+
+.projectDivider hr {
+    margin: 6.25em 0 6.25em 0;
+}
 
 /* media queries */
 @media screen and (max-width: 991px) {
+    .projectHeader div:first-of-type {
+        width: 100% !important;
+    }
+    
     .projectImageShowcase div:first-of-type {
         width: 100% !important;
     }
     p.projectAbout {
+        width: 100% !important;
+    }
+    hr.experienceTableDivider {
         width: 100% !important;
     }
 }
