@@ -6,7 +6,6 @@
     font-family: OpenSansRegular;
     color: black;
     text-decoration: underline;
-    display: inline-block;
     margin-bottom: 1em;
 }
 
@@ -16,6 +15,10 @@
 
 .projectHeader {
     padding: 6.25em 0 6.25em 0;
+}
+
+.projecTitle {
+    margin-top: .5em;
 }
 
 .projectTags {
@@ -84,7 +87,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .goBack {
+    .projectContainer {
         text-align: center;
     }
 }
