@@ -87,8 +87,12 @@
 }
 
 @media screen and (max-width: 767px) {
-    .projectContainer {
-        text-align: center;
+    .projectAbout {
+        text-align: left;
+    }
+    
+    .projectContainer p, .projecTitle {
+        text-align: left;
     }
 }
 
