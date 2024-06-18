@@ -398,11 +398,14 @@ footer {
     .arrowAnim {
         display: none !important;
     }
-}
-
-@media screen and (max-width: 350px) {
     .footerMail {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .footerMail {
+        font-size: 16px;
     }
 }
 
