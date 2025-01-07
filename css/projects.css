@@ -28,6 +28,11 @@
     margin-top: 0.5em;
 }
 
+.projectInformation div {
+    margin: 5em 0 5em 0;
+}
+
+
 .projectAbout {
     margin-top: 2em;
 }
@@ -62,7 +67,11 @@
 
 /* media queries */
 @media screen and (max-width: 991px) {
-    .projectHeader div:first-of-type {
+    .projectHeader {
+        padding: 3.125em 0 6.25em 0;
+    }
+
+    .projectHeader div:nth-child(1) {
         width: 100% !important;
     }
     
@@ -74,6 +83,10 @@
     }
     hr.experienceTableDivider {
         width: 100% !important;
+    }
+
+    .projectInformation div {
+        margin: 3em 0 3em 0;
     }
 }
 
