@@ -66,6 +66,7 @@ html {
     text-align: center;
     display: flex;
     align-items: center;
+    margin-right: 1em;
 }
 
 .button a {
@@ -124,10 +125,6 @@ header {
 .aboutLinks a {
     color: var(--white);
     text-decoration: none;
-}
-
-.aboutLinksExternal {
-    margin-left: .5em;
 }
 
 .aboutLinksExternal a {
@@ -439,6 +436,12 @@ footer {
     }
     .aboutLinksExternal a img {
         margin: 1em 1em 0 1em;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .aboutLinks .button:last-of-type {
+        margin-top: 1em;
     }
 }
 
