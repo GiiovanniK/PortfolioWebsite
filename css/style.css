@@ -454,8 +454,15 @@ footer {
 }
 
 @media screen and (max-width: 321px) {
-    .aboutLinks .button:last-of-type {
+    .aboutLinks, .button, .buttonAlt {
         margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 305px) {
+    .aboutLinks, .button, .buttonAlt {
+        margin-top: 1em;
+        margin-right: .5em;
     }
 }
 
